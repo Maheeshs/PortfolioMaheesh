@@ -1,0 +1,199 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body & sections */
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+/* Background Canvas */
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #0a0a0a;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  background: transparent;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.buttons a {
+  padding: 12px 25px;
+  margin: 5px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn {
+  background-color: #fff;
+  color: #0a0a0a;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #0a0a0a;
+}
+
+/* Portfolio */
+.portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.project {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 420px; /* fixed equal height */
+  transition: 0.3s;
+}
+
+.project video {
+  width: 100%;
+  height: 220px; /* fixed equal video size */
+  object-fit: cover; /* keeps video proportional */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.project h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.project:hover {
+  transform: translateY(-5px);
+}
+.project p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Skills */
+.skills .skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.skill {
+  background: #111;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.skill img {
+  width: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.skill span {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.skill:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+}
+
+.skill:hover img {
+  transform: scale(1.2);
+}
+
+/* Contact */
+.contact .contact-info p {
+  margin: 10px 0;
+}
+
+.copy {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: #111;
+  color: #888;
+  text-align: center;
+}
+
+/* Scroll fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Parallax hero container */
+.hero .container {
+  transition: transform 0.2s ease-out;
+}
