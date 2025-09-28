@@ -170,7 +170,7 @@ section {
 
 .copy {
   cursor: pointer;
-  text-decoration: underline;
+  
 }
 
 /* Footer */
@@ -197,3 +197,11 @@ footer {
 .hero .container {
   transition: transform 0.2s ease-out;
 }
+.email-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* optional */
+  }
+  .email-link:hover {
+    text-decoration: underline;
+  }
